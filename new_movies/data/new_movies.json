@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Lion King",
+        "director": "Disney",
+        "category": "Cartoon",
+        "rating": 6,
+        "players": []
+    },
+    {
+        "id": 2,
+        "name": "Fast & Furious",
+        "director": "The Rock",
+        "category": "Action",
+        "rating": 7,
+        "players": [
+            {
+                "name": "The Rock",
+                "age": 32
+            },
+            {
+                "name": "Paul Walker",
+                "age": 43
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bastards",
+        "director": "Lawrence",
+        "category": "Comedy",
+        "rating": 5,
+        "players": [
+            {
+                "name": "Jennifer Lopez",
+                "age": 44
+            },
+            {
+                "name": "Justin Bieber",
+                "age": 17
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Beauty and the Beast",
+        "director": "Bill",
+        "category": "Romance",
+        "rating": 4,
+        "players": [
+            {
+                "name": "Bell",
+                "age": 35
+            },
+            {
+                "name": "The Beast",
+                "age": 32
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Logan",
+        "director": "Games",
+        "category": "Action",
+        "rating": 9,
+        "players": [
+            {
+                "name": "Wolverine",
+                "age": 32
+            },
+            {
+                "name": "Cyclop",
+                "age": 25
+            }
+        ]
+    }
+]

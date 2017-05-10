@@ -1,0 +1,15 @@
+{
+  "name": "new_movies_ws",
+  "version": "1.0.0",
+  "description": "This WS will manage new movies as a part of V.O.D library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Einav Regev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
