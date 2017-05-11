@@ -5,11 +5,16 @@ const express = require('express'),
       NewMoviesDao = require('./new_movies/NewMoviesDao');
 
 
-app.use(bodyParser.urlencoded({extended: true}));   //For parsing POST requests
 
+app.use(bodyParser.urlencoded({extended: true}));   //For parsing POST requests
+app.use(express.static(__dirname + '/public'));     //For sending files
 //============================================
 
 const newMoviesDao = new NewMoviesDao();
+
+app.get('/',function(req,res){
+    res.sendFile('index.html');
+});
 
 app.get('/getAllNewMovies', 
     (req, res) => {
@@ -32,10 +37,6 @@ app.get('/getNewMovieByRatingAndPlayer', function(req, res) {
 
 app.all('*', function(req, res) {
     res.json({error: 'Route does not exists'});
-});
-
-app.get('/',(req,res)=>{
-    res.sendFile('index.html')
 });
 
 //============================================
