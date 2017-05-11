@@ -34,6 +34,10 @@ app.all('*', function(req, res) {
     res.json({error: 'Route does not exists'});
 });
 
+app.get('/',(req,res)=>{
+    res.sendFile('index.html')
+});
+
 //============================================
 
 app.listen(port, function() {
